@@ -46,6 +46,9 @@ removeDir(CURRENT_DIR . "/" . $extracted_directory, true);
 // we remove also zip file
 unlink(ZIP_FILE);
 
+// and also remove this script
+unlink(__FILE__);
+
 // redirect to the PW installer
 header("Location: install.php");
 
