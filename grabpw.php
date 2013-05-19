@@ -43,6 +43,9 @@ recursiveMove(CURRENT_DIR . "/" . $extracted_directory , CURRENT_DIR);
 // remove extracted zip directory
 removeDir(CURRENT_DIR . "/" . $extracted_directory, true);
 
+// we remove also zip file
+unlink(ZIP_FILE);
+
 // redirect to the PW installer
 header("Location: install.php");
 
