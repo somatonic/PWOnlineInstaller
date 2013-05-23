@@ -9,9 +9,10 @@
  * 3. If anything fails, make sure permission are correct on server and remove files manually
  *
  * @author  Philipp Soma Urlich <philipp at urlich dot ch>
- * @version  1.0.0
+ * @version  1.0.1
  */
 
+ini_set('max_execution_time', 120);
 
 define("SOURCE_URL", "http://grab.pw");
 define("CURRENT_DIR", getcwd());
